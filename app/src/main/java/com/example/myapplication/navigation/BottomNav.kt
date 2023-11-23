@@ -89,11 +89,12 @@ fun BottomNav(
                     BottomNavigationItem(
                         selected = destination.direction == currentDestination.value,
                         onClick = {
-                            currentDestination.value =
-                                destination.direction
-                            navController.navigate(
-                                destination.direction
-                            ) {
+                            if(destination.direction != currentDestination.value) {
+                                currentDestination.value =
+                                    destination.direction
+                                navController.navigate(
+                                    destination.direction
+                                ) {
                                 popUpTo(
                                     Screen.Home.route
                                 ) {
@@ -102,9 +103,10 @@ fun BottomNav(
                                 }
                                 launchSingleTop =
                                     true
-
+//
                                 restoreState =
                                     true
+                                }
                             }
                         },
                         icon = {

@@ -1,4 +1,5 @@
 package com.example.myapplication
+//import com.securevale.rasp.android.native.SecureApp
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -27,6 +28,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
+//        SecureApp.init()
 
         splashScreen.setKeepOnScreenCondition { viewModel.isLoading.value }
 

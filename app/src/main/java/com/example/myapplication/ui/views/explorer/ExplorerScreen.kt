@@ -1,19 +1,11 @@
 package com.example.myapplication.ui.views.explorer
 
-import androidx.activity.OnBackPressedCallback
-import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -21,23 +13,15 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.compose.rememberNavController
 import com.example.myapplication.common.CustomText
 import com.example.myapplication.navigation.MainActions
-import com.example.myapplication.navigation.Screen
-import com.example.myapplication.ui.common.feedCard.FeedCardDetail
 import com.example.myapplication.ui.common.filterBox.FilterBox
-import com.example.myapplication.ui.common.searchField.SearchField
 import com.example.myapplication.ui.theme.Dark_Blue
-import com.example.myapplication.ui.theme.Gray_Text
 import com.example.myapplication.ui.views.explorer.component.ExplorerCard
-import com.example.myapplication.ui.views.home.component.FeedCard
-import com.example.myapplication.ui.views.home.component.NewsFeedHeader
 import com.ramcosta.composedestinations.annotation.Destination
 import com.example.myapplication.R
 import com.example.myapplication.ui.theme.Gold_Color
@@ -112,7 +96,7 @@ fun ExplorerScreen(
                                 12.dp
                             ),
                             painter = painterResource(
-                                id = R.drawable.saving
+                                id = R.drawable.ic_saving
                             ),
                             contentDescription = "",
                             tint = Gold_Color,

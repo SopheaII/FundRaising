@@ -1,7 +1,6 @@
 package com.example.myapplication.ui.common.feedCard
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -12,7 +11,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -20,23 +18,16 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Icon
-import androidx.compose.material.LinearProgressIndicator
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment.Companion.Center
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -44,13 +35,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.myapplication.common.CustomText
 import com.example.myapplication.R
 import com.example.myapplication.navigation.MainActions
-import com.example.myapplication.ui.theme.Blue_Icon
 import com.example.myapplication.ui.theme.Dark_Blue
-import com.example.myapplication.ui.theme.Dark_Red
-import com.example.myapplication.ui.theme.Gray_Text
-import com.example.myapplication.ui.theme.Green_Text
-import com.example.myapplication.ui.theme.Soft_Blue
-import com.example.myapplication.ui.theme.White_Color
 import com.example.myapplication.ui.views.base.ScreenHeader
 import com.example.myapplication.ui.views.home.component.CommonFeedCard
 
@@ -131,7 +116,7 @@ internal fun FeedCardDetail(
                         ) {
                             Icon(
                                 painter = painterResource(
-                                    id = R.drawable.support
+                                    id = R.drawable.ic_support
                                 ),
                                 contentDescription = "",
                                 tint = Dark_Blue
@@ -158,7 +143,7 @@ internal fun FeedCardDetail(
                         ) {
                             Icon(
                                 painter = painterResource(
-                                    id = R.drawable.message
+                                    id = R.drawable.ic_message
                                 ),
                                 contentDescription = "",
                                 tint = Dark_Blue
@@ -185,7 +170,7 @@ internal fun FeedCardDetail(
                         ) {
                             Icon(
                                 painter = painterResource(
-                                    id = R.drawable.share
+                                    id = R.drawable.ic_share
                                 ),
                                 contentDescription = "",
                                 tint = Dark_Blue
@@ -232,7 +217,7 @@ internal fun FeedCardDetail(
                         ) {
                             Icon(
                                 painter = painterResource(
-                                    id = R.drawable.head_plus
+                                    id = R.drawable.ic_head_plus
                                 ),
                                 contentDescription = "",
                                 tint = Dark_Blue

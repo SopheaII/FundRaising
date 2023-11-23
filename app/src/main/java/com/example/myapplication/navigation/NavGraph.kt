@@ -11,7 +11,7 @@ import androidx.navigation.compose.composable
 import com.example.myapplication.ui.common.feedCard.FeedCardDetail
 import com.example.myapplication.ui.views.explorer.ExplorerScreen
 import com.example.myapplication.ui.views.home.HomeScreen
-import com.example.myapplication.ui.views.save.SaveScreen
+import com.example.myapplication.ui.views.notification.NotificationScreen
 import com.example.myapplication.ui.views.user.UserScreen
 
 /**
@@ -43,7 +43,7 @@ internal fun NavGraph(
             BackHandler(true) {
 
             }
-            SaveScreen(actions)
+            NotificationScreen(actions)
         }
         composable(Screen.User.route) {
             BackHandler(true) {

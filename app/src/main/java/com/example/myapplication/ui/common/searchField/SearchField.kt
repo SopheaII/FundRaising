@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
-import androidx.compose.material.Text
 import androidx.compose.material.TextField
 import androidx.compose.material.TextFieldDefaults
 import androidx.compose.material.ripple.rememberRipple
@@ -35,7 +34,6 @@ import com.example.myapplication.common.CustomText
 import com.example.myapplication.ui.theme.Dark_Blue
 import com.example.myapplication.ui.theme.Gray_Text
 import com.example.myapplication.ui.theme.White_Color
-import com.example.myapplication.ui.views.home.component.CommonFeedCard
 
 @Composable
 internal fun SearchField(
@@ -97,7 +95,7 @@ internal fun SearchField(
 
             ) {
                 Icon(
-                    painter = painterResource(id = R.drawable.remove),
+                    painter = painterResource(id = R.drawable.ic_remove),
                     contentDescription = "",
                     Modifier.size(20.dp)
                 )

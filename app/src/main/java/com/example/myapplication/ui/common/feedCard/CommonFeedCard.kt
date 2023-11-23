@@ -33,10 +33,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.compose.rememberNavController
 import com.example.myapplication.R
 import com.example.myapplication.common.CustomText
-import com.example.myapplication.navigation.MainActions
 import com.example.myapplication.ui.theme.Blue_Icon
 import com.example.myapplication.ui.theme.Dark_Blue
 import com.example.myapplication.ui.theme.Dark_Red
@@ -77,7 +75,7 @@ internal fun CommonFeedCard() {
                             start = 5.dp
                         ),
                         painter = painterResource(
-                            id = R.drawable.checkmark
+                            id = R.drawable.ic_checkmark
                         ),
                         contentDescription = "",
                         tint = Blue_Icon
@@ -116,7 +114,7 @@ internal fun CommonFeedCard() {
                 ) {
                     Icon(
                         painter = painterResource(
-                            id = R.drawable.emoji_face
+                            id = R.drawable.ic_emoji_face
                         ),
                         contentDescription = "",
                         tint = White_Color

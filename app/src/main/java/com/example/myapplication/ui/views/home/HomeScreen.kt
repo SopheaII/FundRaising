@@ -34,8 +34,6 @@ import com.ramcosta.composedestinations.annotation.Destination
 fun HomeScreen(
     actions: MainActions
 ) {
-
-
     Column(
         modifier = Modifier
             .fillMaxSize()
